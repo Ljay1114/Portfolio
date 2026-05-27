@@ -1,0 +1,92 @@
+VERCEL DEPLOYMENT TUTORIAL - Stitch Markdown Design System
+
+This file explains step-by-step how to deploy this project to Vercel. It's tailored for this Vite React project.
+
+Project checks (already verified):
+- Build script: "build": "vite build"
+- Output directory (Vite default): dist
+
+Prerequisites
+1. Node.js and npm installed (Windows PowerShell or Command Prompt).
+2. A Vercel account (https://vercel.com).
+3. A GitHub (or GitLab/Bitbucket) account if you prefer deploying from Git.
+
+Recommended — Deploy from Git (GitHub) (simplest for continuous deploys)
+1. If your project is not a git repo yet, in the project root run:
+   git init
+   git add .
+   git commit -m "Initial commit"
+2. Create a new repository on GitHub and follow the instructions to add the remote, e.g.:
+   git remote add origin https://github.com/<your-username>/<repo-name>.git
+   git branch -M main
+   git push -u origin main
+3. Open Vercel dashboard, sign in, click "New Project" -> "Import Git Repository".
+4. Select the repository you just pushed.
+5. Configure the project settings (Vercel usually autodetects Vite):
+   - Framework Preset: Vite (if shown)
+   - Build Command: npm run build
+     (Or `yarn build` / `pnpm build` depending on your package manager)
+   - Output Directory: dist
+6. Click "Deploy". Vercel will run the build and provide a deployment URL.
+7. Every push to the connected branch (e.g., `main`) triggers a new deployment automatically.
+
+Alternative — Deploy from local using Vercel CLI (quick, no Git required)
+1. Install Vercel CLI globally:
+   npm i -g vercel
+2. Login:
+   vercel login
+3. From the project root run:
+   vercel
+   - Follow prompts to link or create a project.
+   - When asked for build command, enter: npm run build
+   - When asked for output directory, enter: dist
+4. For a production deployment, run:
+   vercel --prod
+
+Verify build locally (optional)
+1. Run the dev server:
+   npm run dev
+   - Visit http://localhost:5173 (Vite default) to preview during development.
+2. Run a production build and preview:
+   npm run build
+   npm run preview
+   - `npm run preview` serves the production build locally on a port (usually 5173).
+
+Environment variables and secrets
+- If your site requires env vars, add them in the Vercel dashboard under Project Settings -> Environment Variables.
+- Use the same variable names used by your app.
+
+Custom domain (optional)
+- In Vercel dashboard, go to Domains and add your domain. Follow the DNS instructions they provide.
+
+Troubleshooting tips
+- Build fails: Check Vercel build logs (Dashboard -> Deployments -> View Logs). Ensure `npm install` succeeds and `npm run build` works locally.
+- Wrong output folder: Ensure Vercel uses `dist` (Vite default). If you changed Vite config, update output path accordingly.
+- Need a specific Node version: Set `engines.node` in `package.json` or configure in Vercel Project Settings.
+
+Quick commands summary (copy/paste)
+- Initialize git and push:
+  git init
+  git add .
+  git commit -m "Initial commit"
+  git remote add origin https://github.com/<you>/<repo>.git
+  git branch -M main
+  git push -u origin main
+
+- Local test / build:
+  npm run dev
+  npm run build
+  npm run preview
+
+- Vercel CLI deploy:
+  npm i -g vercel
+  vercel login
+  vercel
+  vercel --prod
+
+If you want, I can:
+- Create a GitHub repo and push this project (you'll need to provide credentials/access or do the final push locally).
+- Add a simple `README.md` with the deployment steps.
+- Commit the new `VERCEL_DEPLOYMENT_TUTORIAL.txt` for you.
+
+End of tutorial.
