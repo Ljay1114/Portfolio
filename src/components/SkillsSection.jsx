@@ -21,34 +21,51 @@ export default function SkillsSection() {
           </div>
           <div className="space-y-12">
             <div className="skill-group">
-              <h3 className="font-card-header text-card-header mb-6 leading-relaxed text-primary">Frontend Architecture</h3>
+              <h3 className="font-card-header text-card-header mb-6 flex justify-between items-baseline leading-relaxed">
+                Frontend Architecture
+              </h3>
+              <div className="w-full h-1 bg-border-steel relative overflow-hidden">
+                <div className="absolute top-0 left-0 h-full bg-primary cyan-glow w-0" style={{ animation: "fillProgress 1.5s ease-out forwards", width: "90%" }} />
+              </div>
               <div className="flex flex-wrap gap-3 mt-4">
-                <span className="font-label-caps text-sm tracking-wide px-4 py-2 border border-primary/60 text-primary bg-primary/10 rounded-lg">HTML</span>
-                <span className="font-label-caps text-sm tracking-wide px-4 py-2 border border-primary/60 text-primary bg-primary/10 rounded-lg">CSS</span>
-                <span className="font-label-caps text-sm tracking-wide px-4 py-2 border border-primary/60 text-primary bg-primary/10 rounded-lg">JavaScript</span>
-                <span className="font-label-caps text-sm tracking-wide px-4 py-2 border border-primary/60 text-primary bg-primary/10 rounded-lg">React</span>
-                <span className="font-label-caps text-sm tracking-wide px-4 py-2 border border-primary/60 text-primary bg-primary/10 rounded-lg">Flutter/Dart</span>
+                <span className="font-label-caps text-xs tracking-tighter px-3 py-1 border border-primary/30 text-primary bg-primary/5">HTML</span>
+                <span className="font-label-caps text-xs tracking-tighter px-3 py-1 border border-primary/30 text-primary bg-primary/5">CSS</span>
+                <span className="font-label-caps text-xs tracking-tighter px-3 py-1 border border-primary/30 text-primary bg-primary/5">JavaScript</span>
+                <span className="font-label-caps text-xs tracking-tighter px-3 py-1 border border-primary/30 text-primary bg-primary/5">React</span>
+                <span className="font-label-caps text-xs tracking-tighter px-3 py-1 border border-primary/30 text-primary bg-primary/5">Flutter/Dart</span>
               </div>
             </div>
             <div className="skill-group">
-              <h3 className="font-card-header text-card-header mb-6 leading-relaxed text-tertiary">Backend Systems</h3>
+              <h3 className="font-card-header text-card-header mb-6 flex justify-between items-baseline leading-relaxed">
+                Backend Systems
+              </h3>
+              <div className="w-full h-1 bg-border-steel relative overflow-hidden">
+                <div className="absolute top-0 left-0 h-full bg-tertiary w-0" style={{ animation: "fillProgress 1.5s ease-out forwards", width: "85%" }} />
+              </div>
               <div className="flex flex-wrap gap-3 mt-4">
-                <span className="font-label-caps text-sm tracking-wide px-4 py-2 border border-tertiary/60 text-tertiary bg-tertiary/10 rounded-lg">Firebase</span>
-                <span className="font-label-caps text-sm tracking-wide px-4 py-2 border border-tertiary/60 text-tertiary bg-tertiary/10 rounded-lg">PHP</span>
-                <span className="font-label-caps text-sm tracking-wide px-4 py-2 border border-tertiary/60 text-tertiary bg-tertiary/10 rounded-lg">REST API</span>
-                <span className="font-label-caps text-sm tracking-wide px-4 py-2 border border-tertiary/60 text-tertiary bg-tertiary/10 rounded-lg">SQLLITE</span>
-                <span className="font-label-caps text-sm tracking-wide px-4 py-2 border border-tertiary/60 text-tertiary bg-tertiary/10 rounded-lg">MYSQL</span>
+                <span className="font-label-caps text-xs tracking-tighter px-3 py-1 border border-tertiary/30 text-tertiary bg-tertiary/5">Firebase</span>
+                <span className="font-label-caps text-xs tracking-tighter px-3 py-1 border border-tertiary/30 text-tertiary bg-tertiary/5">PHP</span>
+                <span className="font-label-caps text-xs tracking-tighter px-3 py-1 border border-tertiary/30 text-tertiary bg-tertiary/5">REST API</span>
+                <span className="font-label-caps text-xs tracking-tighter px-3 py-1 border border-tertiary/30 text-tertiary bg-tertiary/5">SQLLITE</span>
+                <span className="font-label-caps text-xs tracking-tighter px-3 py-1 border border-tertiary/30 text-tertiary bg-tertiary/5">MYSQL</span>
               </div>
             </div>
             <div className="skill-group">
-              <h3 className="font-card-header text-card-header mb-6 leading-relaxed text-secondary">System Design</h3>
+              <h3 className="font-card-header text-card-header mb-6 flex justify-between items-baseline leading-relaxed">
+                Developer Tools
+              </h3>
+              <div className="w-full h-1 bg-border-steel relative overflow-hidden">
+                <div className="absolute top-0 left-0 h-full bg-secondary w-0" style={{ animation: "fillProgress 1.5s ease-out forwards", width: "80%" }} />
+              </div>
               <div className="flex flex-wrap gap-3 mt-4">
-                <span className="font-label-caps text-sm tracking-wide px-4 py-2 border border-secondary/60 text-secondary bg-secondary/10 rounded-lg">UI/UX</span>
-                <span className="font-label-caps text-sm tracking-wide px-4 py-2 border border-secondary/60 text-secondary bg-secondary/10 rounded-lg">Lovable</span>
-                <span className="font-label-caps text-sm tracking-wide px-4 py-2 border border-secondary/60 text-secondary bg-secondary/10 rounded-lg">Bolt</span>
-                <span className="font-label-caps text-sm tracking-wide px-4 py-2 border border-secondary/60 text-secondary bg-secondary/10 rounded-lg">FIGMA</span>
-                <span className="font-label-caps text-sm tracking-wide px-4 py-2 border border-secondary/60 text-secondary bg-secondary/10 rounded-lg">ChartJS</span>
-                <span className="font-label-caps text-sm tracking-wide px-4 py-2 border border-secondary/60 text-secondary bg-secondary/10 rounded-lg">Google Stitch</span>
+                <span className="font-label-caps text-xs tracking-tighter px-3 py-1 border border-secondary/30 text-secondary bg-secondary/5">Cursor</span>
+                <span className="font-label-caps text-xs tracking-tighter px-3 py-1 border border-secondary/30 text-secondary bg-secondary/5">AntiGravity</span>      
+                <span className="font-label-caps text-xs tracking-tighter px-3 py-1 border border-secondary/30 text-secondary bg-secondary/5">Codex</span>          
+                <span className="font-label-caps text-xs tracking-tighter px-3 py-1 border border-secondary/30 text-secondary bg-secondary/5">WindSurf</span>   
+                <span className="font-label-caps text-xs tracking-tighter px-3 py-1 border border-secondary/30 text-secondary bg-secondary/5">AmazonQ</span>   
+                <span className="font-label-caps text-xs tracking-tighter px-3 py-1 border border-secondary/30 text-secondary bg-secondary/5">Lovable</span>
+                <span className="font-label-caps text-xs tracking-tighter px-3 py-1 border border-secondary/30 text-secondary bg-secondary/5">Bolt</span>
+                <span className="font-label-caps text-xs tracking-tighter px-3 py-1 border border-secondary/30 text-secondary bg-secondary/5">Google Stitch</span>
               </div>
             </div>
           </div>
