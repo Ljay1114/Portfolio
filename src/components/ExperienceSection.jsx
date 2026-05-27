@@ -23,15 +23,15 @@ export default function ExperienceSection() {
               <div className="relative z-10 w-4 h-4 rounded-full bg-surface-void border-2 border-tertiary shadow-[0_0_10px_#00fdb0] my-8 md:my-0 shrink-0" />
               <div className="w-full md:w-[45%] pl-0 md:pl-12 overflow-visible">
                 <span className="font-code text-tertiary mb-2 block leading-normal">2022 - 2026</span>
-                <h3 className="font-card-header text-2xl mb-4 !leading-[1.75] pb-1.5 overflow-visible">College IT Student</h3>
-                <p className="text-on-surface-variant !leading-[1.75] pb-1 overflow-visible">Developed responsive web applications and Systems focusing on database optimization and UI refinement.</p>
+                <h3 className="font-card-header text-2xl !leading-[1.75] pb-1.5 overflow-visible">College IT Student</h3>
+                <p className="text-on-surface-variant !leading-[1.75] pb-1 overflow-visible">Worked on school and personal web development projects using frontend and backend technologies. Used AI tools to assist in building websites, systems, and improving development workflows while gaining experience in databases and responsive design.</p>
               </div>
             </div>
             <div className="flex flex-col md:flex-row items-start justify-between w-full journey-card opacity-0">
               <div className="w-full md:w-[45%] text-right pr-0 md:pr-12 overflow-visible">
                 <span className="font-code text-secondary mb-2 block leading-normal">2020 - 2022</span>
-                <h3 className="font-card-header text-2xl mb-4 !leading-[1.75] pb-1.5 overflow-visible">Senior igh ICT Student</h3>
-                <p className="text-on-surface-variant !leading-[1.75] pb-1 overflow-visible">Learned basic programming, web development, and computer system maintenance through school activities and projects.</p>
+                <h3 className="font-card-header text-2xl !leading-[1.75] pb-1.5 overflow-visible">Senior High ICT Student</h3>
+                <p className="text-on-surface-variant !leading-[1.75] pb-1 overflow-visible">Studied the fundamentals of programming, computer hardware, networking, and web development. Participated in academic projects and activities that developed problem-solving, technical, and basic system maintenance skills.</p>
               </div>
               <div className="relative z-10 w-4 h-4 rounded-full bg-surface-void border-2 border-secondary shadow-[0_0_10px_#c9bfff] my-8 md:my-0 shrink-0" />
               <div className="w-full md:w-[45%] pl-0 md:pl-12 hidden md:block" />
