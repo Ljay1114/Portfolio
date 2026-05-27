@@ -1,4 +1,5 @@
 import { useState } from "react";
+import DeveloperImage from "../assets/the-developer.png";
 
 export default function AboutSection() {
   const [transform, setTransform] = useState("perspective(1000px) rotateX(0deg) rotateY(0deg)");
@@ -24,7 +25,7 @@ export default function AboutSection() {
         <div className="lg:col-span-5 relative mt-12 lg:mt-0">
           <div className="tilt-card glass-card p-4 aspect-[4/5] relative overflow-hidden group" style={{ transform }} onMouseMove={handleMove} onMouseLeave={() => setTransform("perspective(1000px) rotateX(0deg) rotateY(0deg)")}>
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent opacity-50" />
-            <img alt="Lexel Jay Alejo Profile" className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700" src="Asssets/The Developer.png" />
+            <img alt="Lexel Jay Alejo Profile" className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700" src={DeveloperImage} />
             <div className="absolute top-8 right-8 w-12 h-12 glass-card rounded-full flex items-center justify-center animate-bounce duration-1000 delay-100"><span className="material-symbols-outlined text-primary text-xl">javascript</span></div>
             <div className="absolute bottom-1/4 left-4 w-12 h-12 glass-card rounded-full flex items-center justify-center animate-bounce duration-1000 delay-300"><span className="material-symbols-outlined text-tertiary text-xl">database</span></div>
             <div className="absolute top-1/2 -right-2 w-10 h-10 glass-card rounded-full flex items-center justify-center animate-bounce duration-1000 delay-500"><span className="material-symbols-outlined text-secondary text-xl">terminal</span></div>

@@ -1,10 +1,15 @@
+import HidenGenImage from "../assets/HidenGen.png";
+import ThinkCImage from "../assets/Step6SelectLesson.jpg";
+import DashboardLeadGenImage from "../assets/dashboard-leadgen-wordpress.png";
+import SupportTicketsImage from "../assets/support-tickets-rafwilld-wordpress.png";
+
 const projects = [
   {
     title: "HIDENGEN BLOGSITE",
     year: "2024",
     description: "A comprehensive academic management system featuring real-time enrollment modules, grade tracking with data visualization, and an automated scheduling engine built on Next.js.",
     tags: ["HTML", "CSS", "JavaScript", "Firebase"],
-    image: "Asssets/HidenGen.png",
+    image: HidenGenImage,
     href: "https://hiden-genn.netlify.app/",
     accent: "text-primary"
   },
@@ -13,7 +18,7 @@ const projects = [
     year: "2024",
     description: "An offline, gamified learning tool for Grades 4–6 that combines Math, Science, and Language lessons with eco-health concepts, improving engagement, motivation, and accessibility for Filipino pupils.",
     tags: ["Flutter", "Dart", "SqlLite"],
-    image: "Asssets/Step6SelectLesson.jpg",
+    image: ThinkCImage,
     href: "https://hiden-genn.netlify.app/",
     accent: "text-tertiary"
   },
@@ -22,7 +27,7 @@ const projects = [
     year: "2026",
     description: "This is a standalone WordPress plugin for ArkiDevs that streamlines outbound lead prospecting by collecting potential client data from public sources, organizing qualified leads in a database, syncing them with Google Sheets, and providing a dashboard to manage outreach pipelines.",
     tags: ["PHP", "MySQL", "JavaScript", "REST API"],
-    image: "Asssets/Dashboard-‹-LeadGen-—-WordPress.png",
+    image: DashboardLeadGenImage,
     href: "#",
     accent: "text-secondary"
   },
@@ -31,7 +36,7 @@ const projects = [
     year: "2026",
     description: "A modernized WordPress support and ticket management plugin for ArkiDevs that enables customers to submit and manage support tickets, while agents and administrators can track issues, manage ticket workflows, monitor support hours, log work time, and handle customer support operations through the WordPress admin dashboard.",
     tags: ["PHP", "MySQL", "JavaScript", "REST API"],
-    image: "Asssets/Support-Tickets-‹-RafWillD-—-WordPress.png",
+    image: SupportTicketsImage,
     href: "#",
     accent: "text-secondary"
   }
